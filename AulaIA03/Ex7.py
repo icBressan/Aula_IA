@@ -21,7 +21,7 @@ if len(telefone) == 11 and numero_valido:
     numero_8 = telefone[9]
     numero_9 = telefone[10]
 
-    numero_formatado = f"({ddd}){numero_primeiro_caracter}{numero_2}{numero_3}{numero_4}{numero_5}-{numero_6}{numero_7}{numero_8}{numero_9}"
+    numero_formatado = f"({ddd}) {numero_primeiro_caracter}{numero_2}{numero_3}{numero_4}{numero_5}-{numero_6}{numero_7}{numero_8}{numero_9}"
 
     print(f"Número formatado: {numero_formatado}")
 else:
