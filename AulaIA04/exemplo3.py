@@ -1,0 +1,11 @@
+alunos = ['Felipe','Isabelle','Pedro','Ligia','Mateus']
+
+alunos.insert(0,'Ana Beatriz')
+print(alunos)
+
+alunos.insert(2,'Marco')
+print(alunos)
+
+
+alunos.insert(-1,'Yasmin')
+print(alunos)
