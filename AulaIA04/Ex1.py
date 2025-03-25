@@ -1,13 +1,17 @@
 string = input().upper()
+dna = ""
 
-if string not in ['A','T','C','G']:
-    print('String inválida')
-else:
-    if string == 'A':
-        print('T')  
-    elif string == 'T':
-        print('A') 
-    elif string == 'C':
-        print('G') 
-    elif string == 'G':
-        print('C')  
+for letra in string:
+        if letra not in ['A','T','C','G']:
+            print('String inválida')
+        elif letra == 'A':
+            dna += 'T' 
+        elif letra == 'T':
+            dna += 'A'
+        elif letra == 'C':
+            dna += 'G'
+        elif letra == 'G':
+            dna += 'C'
+        
+
+print(dna)

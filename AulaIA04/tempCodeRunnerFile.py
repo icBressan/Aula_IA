@@ -3,29 +3,23 @@ soma=0
 media=0
 
 while True:
-    nota = int(input("Digite a nota (-1 para sair): "))
-
-    if nota == -1:
-        break
-    
-    notas.append(nota)
+    nota = int(input("Digite a nota: "))
     soma += nota
-    
     media = soma / len(notas)
 
     acima_media=0
     abaixo_seis=0
-    for nota in notas:
-        if nota > media:
-            acima_media += 1
-        if nota < 6:
-            abaixo_seis += 1
+    if nota > media:
+        acima_media += 1
+    if nota < 6:
+        abaixo_seis += 1
+    if nota == -1:
+        break
+
+    notas.append(nota)
     
 
-    
-    
-
-print (f"Valores lidos: {len(notas)}")
+print (f"Valores lidos {len(notas)}")
 print(f'Notas: {notas}')
 print(f'Soma: {soma}')
 print(f'Media: {media}')
