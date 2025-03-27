@@ -9,9 +9,18 @@ def carregaAlunosNotas():
 
         alunos.append(nome)
         notas.append(nota)
+
+    return [alunos,notas]
+
+def nomeAlunoMaiorNota(matriz):
+    alunos = matriz[0]
+    notas = matriz[1]
+
+    for nota in notas:
+        if nota[i] > nota[]
     
-    print(f'Alunos: {alunos}')
-    print(f'Notas: {notas}')
+    return[]
 
 print('Exemplo 2')
-carregaAlunosNotas()
+print(carregaAlunosNotas())
+
