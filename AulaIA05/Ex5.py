@@ -6,8 +6,11 @@ lista_nomes = nomes.split(";")
 lista_notas = notas.split(";")
 lista_faltas = faltas.split(";")
 
+total_silva = 0
+
 for i in range(len(lista_nomes)):
-    print("Nome:", lista_nomes[i])
-    print("Nota:", lista_notas[i])
-    print("Falta:", lista_faltas[i])
-    print("-" * 30)
+    if "SILVA" in lista_nomes[i]:
+        print(lista_nomes[i])
+        total_silva += 1
+
+print("Total com sobrenome 'SILVA':", total_silva)

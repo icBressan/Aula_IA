@@ -7,7 +7,10 @@ lista_notas = notas.split(";")
 lista_faltas = faltas.split(";")
 
 for i in range(len(lista_nomes)):
-    print("Nome:", lista_nomes[i])
-    print("Nota:", lista_notas[i])
-    print("Falta:", lista_faltas[i])
-    print("-" * 30)
+    partes = lista_nomes[i].split()
+    novo_nome = partes[0].capitalize()
+    for j in range(1, len(partes) - 1):
+        inicial = partes[j][0].upper() + "."
+        novo_nome += " " + inicial
+    novo_nome += " " + partes[-1].capitalize()
+    print(novo_nome)

@@ -6,8 +6,14 @@ lista_nomes = nomes.split(";")
 lista_notas = notas.split(";")
 lista_faltas = faltas.split(";")
 
+total_reprovados_falta = 0
+
 for i in range(len(lista_nomes)):
-    print("Nome:", lista_nomes[i])
-    print("Nota:", lista_notas[i])
-    print("Falta:", lista_faltas[i])
-    print("-" * 30)
+    falta = int(lista_faltas[i])
+    if falta > 20:
+        print("•", lista_nomes[i])
+        total_reprovados_falta += 1
+
+print("")
+print("### TOTAL DE REPROVADOS POR FALTA ###")
+print("Total de reprovados por falta:", total_reprovados_falta)

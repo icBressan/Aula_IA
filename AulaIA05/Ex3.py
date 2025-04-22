@@ -6,8 +6,14 @@ lista_nomes = nomes.split(";")
 lista_notas = notas.split(";")
 lista_faltas = faltas.split(";")
 
+total_aprovados = 0
+
 for i in range(len(lista_nomes)):
-    print("Nome:", lista_nomes[i])
-    print("Nota:", lista_notas[i])
-    print("Falta:", lista_faltas[i])
-    print("-" * 30)
+    nota = float(lista_notas[i])
+    if nota >= 6.0:
+        print(lista_nomes[i])
+        total_aprovados += 1
+
+print("")
+print("### TOTAL DE APROVADOS ###")
+print("Total de aprovados:", total_aprovados)
